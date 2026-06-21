@@ -1,0 +1,595 @@
+{
+  "site": {
+    "name": "Astrix Glow",
+    "tagline": "Label Company",
+    "logo": "assets/images/astrixglowlogo.png",
+    "logoHeader": "assets/images/astrixglowlogo.png",
+    "logoFooter": "assets/images/astrixglowlogo.png",
+    "favicon": "assets/images/favicon.ico",
+    "url": "https://astrixglow.com",
+    "email": "astrixglow@gmail.com",
+    "emailSecondary": "astrixglow@gmail.com",
+    "whatsapp": "918190060614",
+    "whatsappMessage": "Hello Astrix Glow, I would like to know more about your products and services.",
+    "brochureUrl": "#",
+    "brochureLabel": "Download Brochure"
+  },
+  "seo": {
+    "title": "Astrix Glow | The Label Company",
+    "description": "Barcode label manufacturing provider and supplier of barcode labels, label media, and labeling systems. Serving logistics, retail, and industrial sectors.",
+    "ogImage": "assets/images/og-image.png",
+    "keywords": "barcode labels, label manufacturing, barcode printers, thermal labels, inventory labels, logistics labeling, retail labels, asset management labels"
+  },
+  "navigation": [
+    {
+      "label": "Products",
+      "href": "#products",
+      "children": [
+        {
+          "group": "BARCODE LABELS",
+          "items": [
+            {
+              "label": "Direct Thermal Labels",
+              "href": "#"
+            },
+            {
+              "label": "Thermal Transfer Labels",
+              "href": "#"
+            },
+            {
+              "label": "Asset Tracking Labels",
+              "href": "#"
+            },
+            {
+              "label": "Shipping Labels",
+              "href": "#"
+            },
+            {
+              "label": "Product Barcode Labels",
+              "href": "#"
+            }
+          ]
+        },
+        {
+          "group": "CUSTOM SOLUTIONS",
+          "items": [
+            {
+              "label": "Custom Printed Labels",
+              "href": "#"
+            },
+            {
+              "label": "QR Code Labels",
+              "href": "#"
+            },
+            {
+              "label": "Tamper-Evident Labels",
+              "href": "#"
+            },
+            {
+              "label": "Waterproof Labels",
+              "href": "#"
+            },
+            {
+              "label": "Variable Data Labels",
+              "href": "#"
+            }
+          ]
+        },
+        {
+          "group": "INDUSTRIAL LABELS",
+          "items": [
+            {
+              "label": "Warehouse Labels",
+              "href": "#"
+            },
+            {
+              "label": "Manufacturing Labels",
+              "href": "#"
+            },
+            {
+              "label": "Healthcare Labels",
+              "href": "#"
+            },
+            {
+              "label": "Retail Labels",
+              "href": "#"
+            },
+            {
+              "label": "Logistics Labels",
+              "href": "#"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Solutions",
+      "href": "#solutions",
+      "children": [
+        {
+          "group": "Industries",
+          "items": [
+            {
+              "label": "Retail Barcode Labeling",
+              "href": "#"
+            },
+            {
+              "label": "Asset Label Tracking",
+              "href": "#"
+            },
+            {
+              "label": "Warehouse Barcode Logistics",
+              "href": "#"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Services",
+      "href": "#services",
+      "children": [
+        {
+          "group": "Our Services",
+          "items": [
+            {
+              "label": "Labeling Application Engineering",
+              "href": "#"
+            },
+            {
+              "label": "Label Materials Testing & Support",
+              "href": "#"
+            },
+            {
+              "label": "Label Implementation & Consulting",
+              "href": "#"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Platform",
+      "href": "https://waveconnect.ai/",
+      "external": true
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    },
+    {
+      "label": "Careers",
+      "href": "#"
+    }
+  ],
+  "hero": {
+    "eyebrowText": "Supply Chain & Asset Intelligence",
+    "headline": "Precise Label for Premium Brands",
+    "subheadline": "",
+    "description": "We engineer and manufacture next-generation barcode label technology, providing global enterprise logistics, retail networks, and industrial operations with 99.9% scan accuracy.",
+    "ctaPrimary": {
+      "label": "Explore Solutions",
+      "href": "#solutions"
+    },
+    "ctaSecondary": {
+      "label": "Learn More",
+      "href": "#about"
+    },
+    "image": "assets/images/hero-product.webp",
+    "imageAlt": "Astrix Glow High-Performance Label Printing System"
+  },
+  "trustedBy": {
+    "heading": "Trusted by Industry Leaders Worldwide",
+    "logos": [
+      {
+        "name": "Zebra Technologies",
+        "src": "assets/images/logo-placeholder.svg"
+      },
+      {
+        "name": "Impinj",
+        "src": "assets/images/logo-placeholder.svg"
+      },
+      {
+        "name": "Honeywell",
+        "src": "assets/images/logo-placeholder.svg"
+      },
+      {
+        "name": "Siemens",
+        "src": "assets/images/logo-placeholder.svg"
+      },
+      {
+        "name": "Bosch",
+        "src": "assets/images/logo-placeholder.svg"
+      },
+      {
+        "name": "Amazon",
+        "src": "assets/images/logo-placeholder.svg"
+      },
+      {
+        "name": "DHL",
+        "src": "assets/images/logo-placeholder.svg"
+      },
+      {
+        "name": "FedEx",
+        "src": "assets/images/logo-placeholder.svg"
+      }
+    ]
+  },
+  "about": {
+    "subtitle": "Who We Are",
+    "title": "Trusted Barcode Label Manufacturing Excellence",
+    "description": "Astrix Glow specializes in designing and manufacturing premium barcode labeling solutions for businesses across retail, logistics, healthcare, manufacturing, and e-commerce sectors. Our commitment to quality, precision, and innovation ensures every label delivers exceptional print clarity, reliable scan performance, and long-term durability. From custom label design to large-scale production, we help brands streamline operations and improve product traceability.",
+    "badgeValue": "15+",
+    "badgeLabel": "Years of Innovation",
+    "features": [
+      {
+        "icon": "layers",
+        "title": "Industry Expertise",
+        "text": "Serving retail, logistics, manufacturing, healthcare, and e-commerce businesses with specialized barcode labeling solutions tailored to industry requirements."
+      },
+      {
+        "icon": "grid",
+        "title": "Custom Manufacturing",
+        "text": "Flexible production capabilities supporting custom sizes, materials, adhesives, finishes, QR codes, and variable data printing requirements."
+      },
+      {
+        "icon": "shield-check",
+        "title": "Quality Assurance",
+        "text": "Every label undergoes rigorous quality checks to ensure superior print clarity, durability, adhesion performance, and barcode readability."
+      },
+      {
+        "icon": "zap",
+        "title": "Fast Production & Support",
+        "text": "Efficient manufacturing workflows and dedicated customer support ensure quick turnaround times and reliable delivery schedules."
+      }
+    ],
+    "image": "assets/images/about-warehouse.webp",
+    "imageAlt": "Barcode labels applied to inventory in an automated warehouse center"
+  },
+  "products": {
+    "subtitle": "OUR PRODUCTS",
+    "title": "Complete Labeling Solutions for Modern Businesses",
+    "description": "From custom barcode labels and asset tracking solutions to industrial-grade labeling systems, Astrix Glow delivers end-to-end labeling products designed to improve product identification, inventory management, and supply chain efficiency.",
+    "items": [
+      {
+        "title": "Direct Thermal Labels",
+        "badges": ["Fast Printing", "Cost Effective", "Retail Ready"],
+        "description": "Ideal for shipping, logistics, inventory control, and short-term barcode applications requiring reliable scan performance.",
+        "image": "assets/images/product-direct-thermal.png"
+      },
+      {
+        "title": "Thermal Transfer Labels",
+        "badges": ["Long Lasting", "Industrial Grade", "High Durability"],
+        "description": "Designed for demanding environments requiring superior print permanence, durability, and resistance.",
+        "image": "assets/images/product-thermal-transfer.png"
+      },
+      {
+        "title": "Asset Tracking Labels",
+        "badges": ["Asset Management", "Long Life", "High Adhesion"],
+        "description": "Durable barcode labels designed for machinery, equipment, tools, and inventory asset identification.",
+        "image": "assets/images/product-asset-tracking.png"
+      },
+      {
+        "title": "Security & Tamper Labels",
+        "badges": ["Tamper Evident", "Secure", "Anti Counterfeit"],
+        "description": "Specialized labels that reveal tampering attempts and provide enhanced product and asset security.",
+        "image": "assets/images/product-security-tamper.png"
+      },
+      {
+        "title": "Warehouse & Logistics Labels",
+        "badges": ["Supply Chain", "Bulk Production", "Fast Scanning"],
+        "description": "Barcode labels optimized for warehousing, shipping, receiving, and inventory management operations.",
+        "image": "assets/images/product-warehouse-logistics.png"
+      },
+      {
+        "title": "Custom Printed Labels",
+        "badges": ["Custom Design", "QR Compatible", "Variable Data"],
+        "description": "Fully customized barcode and QR code labels tailored to branding, packaging, and operational requirements.",
+        "image": "assets/images/product-custom-printed.png"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": 500,
+      "suffix": "+",
+      "label": "Global Clients"
+    },
+    {
+      "value": 15,
+      "suffix": "+",
+      "label": "Years Experience"
+    },
+    {
+      "value": 50,
+      "suffix": "M+",
+      "label": "Tags Deployed"
+    },
+    {
+      "value": 30,
+      "suffix": "+",
+      "label": "Countries Served"
+    }
+  ],
+  "solutions": {
+    "subtitle": "Target Verticals",
+    "title": "Engineered Labeling Industry Integrations",
+    "description": "Maximize product traceability. Our custom labeling solutions and media integrations target major industry operations.",
+    "items": [
+      {
+        "title": "Retail Barcode Labeling",
+        "description": "We optimize fast fashion and global luxury retail operations with custom barcode labels. Seamless inventory updates, reduced shrink, and faster restocking improve customer experience.",
+        "image": "assets/images/solution-retail.png",
+        "icon": "shopping-bag",
+        "href": "#",
+        "highlights": [
+          "99% Inventory Accuracy",
+          "Loss Prevention Alerts",
+          "Self-Checkout Systems"
+        ]
+      },
+      {
+        "title": "Warehouse & Logistics",
+        "description": "Automate logistics from inbound receiving dock gates to outbound shipping bays. Scan and track multiple packages efficiently to ensure seamless workflow synchronization.",
+        "image": "assets/images/solution-logistics.png",
+        "icon": "truck",
+        "href": "#",
+        "highlights": [
+          "Automatic Barcode Scanning",
+          "Real-Time Pallet Tracking",
+          "WMS Synchronization"
+        ]
+      },
+      {
+        "title": "Asset Label Tracking",
+        "description": "Secure IT equipment, medical devices, and manufacturing machinery with rugged barcode labels. Our labels ensure clear identification and easy auditability across enterprise assets.",
+        "image": "assets/images/solution-asset.webp",
+        "icon": "box",
+        "href": "#",
+        "highlights": [
+          "Metal-Mount Capability",
+          "Lifecycle Audit Trails",
+          "Frictionless Verification"
+        ]
+      },
+      {
+        "title": "Healthcare & Pharmaceutical Solutions",
+        "description": "Ensure accurate identification of medicines, laboratory samples, medical equipment, and patient records with high-precision barcode labels.",
+        "image": "assets/images/solution-healthcare.png",
+        "icon": "heart",
+        "href": "#",
+        "highlights": [
+          "Compliance Ready",
+          "High Precision",
+          "Long Lasting"
+        ]
+      }
+    ]
+  },
+  "services": {
+    "subtitle": "Our Capabilities",
+    "title": "End-to-End Labeling Engineering",
+    "description": "We support you from label media selection and adhesion testing to final software integration and systems validation.",
+    "items": [
+      {
+        "icon": "settings",
+        "title": "Application Engineering",
+        "description": "Custom middleware and system software. We connect reader hardware to your ERP database (SAP, Oracle) or WMS platforms via secure REST APIs.",
+        "href": "#"
+      },
+      {
+        "icon": "test-tube",
+        "title": "Label Materials Testing & Validation",
+        "description": "We perform testing for adhesive strength, print durability, and material compatibility. Select custom label media tailored to industrial surfaces and harsh environments.",
+        "href": "#"
+      },
+      {
+        "icon": "users",
+        "title": "Implementation & Consulting",
+        "description": "We execute site-survey diagnostics and RF mapping. We calculate the ideal placement for portal readers to prevent read-rate drops.",
+        "href": "#"
+      }
+    ]
+  },
+  "caseStudies": [
+    {
+      "title": "Smart Warehouse Transformation",
+      "client": "LogiTech Supply Co.",
+      "metric": "99.5%",
+      "metricLabel": "Inventory Accuracy Achieved",
+      "description": "Delivered 42 high-volume label stations across 5 regional distribution centers, replacing manual handheld counts with printed barcode pallet and carton labels.",
+      "tags": [
+        "Logistics",
+        "Barcode Labeling"
+      ],
+      "image": "assets/images/solution-logistics.webp"
+    },
+    {
+      "title": "Retail Chain Inventory Control",
+      "client": "RetailMax Inc.",
+      "metric": "65%",
+      "metricLabel": "Shrinkage Reduction",
+      "description": "Rolled out tamper-resistant barcode label programs and self-checkout shelf labels across 120 apparel stores to secure merchandise and improve stock visibility.",
+      "tags": [
+        "Retail",
+        "Shelf Labels"
+      ],
+      "image": "assets/images/solution-retail.webp"
+    },
+    {
+      "title": "Sterilization Autoclave Tracking",
+      "client": "MedTrack Systems",
+      "metric": "40%",
+      "metricLabel": "Efficiency Increase",
+      "description": "Created durable asset labels and sterilization cycle labels to track sterilization trays and medical equipment lifecycle conditions.",
+      "tags": [
+        "Healthcare",
+        "Durable Labels"
+      ],
+      "image": "assets/images/solution-asset.webp"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Astrix Glow transformed our warehouse operations with their barcode labeling solution. We achieved 99.5% inventory accuracy within 3 months of deployment.",
+      "author": "Sarah Mitchell",
+      "role": "VP of Operations",
+      "company": "LogiTech Supply Co.",
+      "avatar": ""
+    },
+    {
+      "quote": "The barcode labeling solution from Astrix Glow reduced our shrinkage by 65% and improved checkout speed by 40%. An incredible ROI.",
+      "author": "James Patel",
+      "role": "CTO",
+      "company": "RetailMax Inc.",
+      "avatar": ""
+    },
+    {
+      "quote": "Their engineering team's expertise in barcode system integration was outstanding. The custom solution perfectly aligned with our existing infrastructure.",
+      "author": "Dr. Lin Wei",
+      "role": "Director of Technology",
+      "company": "MedTrack Systems",
+      "avatar": ""
+    }
+  ],
+  "cta": {
+    "headline": "Industries We Serve",
+    "description": "From retail and healthcare to manufacturing and logistics, Astrix Glow barcode labeling solutions are trusted by enterprises worldwide to drive operational excellence.",
+    "buttonLabel": "Get a Free Consultation",
+    "buttonHref": "#contact"
+  },
+  "contact": {
+    "subtitle": "Get in Touch",
+    "title": "Ready to Transform Your Operations?",
+    "description": "Contact our labeling experts for a free consultation and discover how our solutions can optimize your business processes.",
+    "formFields": [
+      "name",
+      "email",
+      "phone",
+      "company",
+      "message"
+    ]
+  },
+  "footer": {
+    "description": "Astrix Glow is a global barcode labeling enterprise providing world-class label solutions and services to businesses worldwide.",
+    "globalHQ": {
+      "title": "Global HQ",
+      "address": "1201 N Orange St., STE 7445, Wilmington, DE 19801, USA"
+    },
+    "corporateOffice": {
+      "title": "Corporate Office",
+      "address": "Second Floor, Plot no.4, Ranga Colony, Rajakilpakkam, Chennai-600073, Tamilnadu, India"
+    },
+    "phoneUSA": [
+      {
+        "label": "Direct",
+        "number": "+1 (484) 907-2135"
+      },
+      {
+        "label": "Board",
+        "number": "+1 (484) 917-1220 ext. 111"
+      }
+    ],
+    "phoneIndia": [
+      "+91 9840303796",
+      "+91 7305058032",
+      "+91 9840303204",
+      "+91 890060614"
+    ],
+    "productLinks": [
+      {
+        "label": "Label Systems",
+        "href": "#"
+      },
+      {
+        "label": "Label Accessories",
+        "href": "#"
+      },
+      {
+        "label": "Label Media",
+        "href": "#"
+      },
+      {
+        "label": "Label Security",
+        "href": "#"
+      },
+      {
+        "label": "Label Printers",
+        "href": "#"
+      }
+    ],
+    "quickLinks": [
+      {
+        "label": "About Us",
+        "href": "#about"
+      },
+      {
+        "label": "Innovations",
+        "href": "#products"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Solutions",
+        "href": "#solutions"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "linkedin",
+        "href": "https://www.linkedin.com/company/astrixglow-placeholder/",
+        "label": "LinkedIn"
+      },
+      {
+        "platform": "facebook",
+        "href": "https://www.facebook.com/astrixglow-placeholder/",
+        "label": "Facebook"
+      },
+      {
+        "platform": "instagram",
+        "href": "https://www.instagram.com/astrixglow-placeholder/",
+        "label": "Instagram"
+      },
+      {
+        "platform": "youtube",
+        "href": "https://youtube.com/@astrixglow-placeholder",
+        "label": "YouTube"
+      }
+    ],
+    "copyright": "Astrix Glow © 2024. All Rights Reserved."
+  },
+  "certifications": [
+    "ISO 9001:2015",
+    "CE",
+    "FCC",
+    "RoHS"
+  ],
+  "milestones": [
+    {
+      "year": "2011",
+      "event": "Founded in Chennai, India"
+    },
+    {
+      "year": "2016",
+      "event": "Opened US Operations Desk"
+    },
+    {
+      "year": "2020",
+      "event": "Delivered 20M+ barcode labels worldwide"
+    },
+    {
+      "year": "2024",
+      "event": "Launched custom smart security labels"
+    }
+  ],
+  "brochure": {
+    "label": "Download Company Profile",
+    "url": "#"
+  }
+}

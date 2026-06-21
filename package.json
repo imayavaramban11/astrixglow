@@ -1,0 +1,24 @@
+{
+  "name": "astrix-glow",
+  "version": "1.0.0",
+  "description": "Astrix Glow Barcode Label Manufacturing Enterprise Web Portal",
+  "main": "js/main.js",
+  "scripts": {
+    "dev": "npx http-server -p 3000",
+    "build": "node scripts/minify.js",
+    "minify": "node scripts/minify.js",
+    "lighthouse": "npx lighthouse http://localhost:3000 --chrome-flags=\"--headless --disable-gpu --no-sandbox\""
+  },
+  "keywords": [
+    "barcode-labels",
+    "labels",
+    "web-portal",
+    "vanilla-js"
+  ],
+  "author": "Astrix Glow",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "lighthouse": "^12.8.2"
+  }
+}
