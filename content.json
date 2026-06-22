@@ -273,30 +273,30 @@
   },
   "caseStudies": [
     {
-      "title": "Smart Warehouse Transformation",
-      "client": "Global Logistics Network",
+      "title": "Warehouse Labeling Optimization",
+      "client": "GLOBAL LOGISTICS NETWORK",
       "metric": "99.9%",
-      "metricLabel": "Barcode Readability Rate",
-      "description": "Delivered 42 high-volume label stations across 5 regional distribution centers, replacing manual handheld counts with printed barcode pallet and carton labels.",
-      "tags": ["Logistics", "Barcode Labeling"],
+      "metricLabel": "BARCODE READABILITY RATE",
+      "description": "Implemented high-quality barcode labels across distribution centers, achieving near-perfect scan accuracy and reducing manual verification efforts.",
+      "tags": ["Logistics", "Inventory Tracking"],
       "image": "/assets/images/solution-logistics.webp"
     },
     {
-      "title": "Retail Chain Inventory Control",
-      "client": "RetailMax Inc.",
-      "metric": "65%",
-      "metricLabel": "Shrinkage Reduction",
-      "description": "Rolled out tamper-resistant barcode label programs and self-checkout shelf labels across 120 apparel stores to secure merchandise and improve stock visibility.",
-      "tags": ["Retail", "Shelf Labels"],
+      "title": "Retail Inventory Management",
+      "client": "RETAILONE STORES",
+      "metric": "99.7%",
+      "metricLabel": "INVENTORY ACCURACY ACHIEVED",
+      "description": "Standardized barcode labeling across multiple retail locations, improving stock visibility and enabling faster inventory reconciliation.",
+      "tags": ["Retail", "Stock Control"],
       "image": "/assets/images/solution-retail.webp"
     },
     {
-      "title": "Sterilization Autoclave Tracking",
-      "client": "MedTrack Systems",
-      "metric": "40%",
-      "metricLabel": "Efficiency Increase",
-      "description": "Created durable asset labels and sterilization cycle labels to track sterilization trays and medical equipment lifecycle conditions.",
-      "tags": ["Healthcare", "Durable Labels"],
+      "title": "Manufacturing Asset Identification",
+      "client": "PRECISION MANUFACTURING LTD.",
+      "metric": "99.8%",
+      "metricLabel": "PRODUCT TRACEABILITY SUCCESS",
+      "description": "Deployed industrial barcode labels for production tracking and asset management, ensuring accurate identification throughout the manufacturing lifecycle.",
+      "tags": ["Manufacturing", "Asset Tracking"],
       "image": "/assets/images/solution-asset.webp"
     }
   ],
