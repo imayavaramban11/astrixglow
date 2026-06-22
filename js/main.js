@@ -35,6 +35,9 @@
       handleSubpageScroll();
     });
 
+    // Offline file:// navigation interceptor
+    setupOfflineNavigation();
+
     // 3. Initialize all interactive UI features
     initThemeSwitcher();
     initStickyHeader();
@@ -52,11 +55,68 @@
   }
 
   // ============================================================
+  // Offline Navigation & Path Resolution System
+  // ============================================================
+  function getRelativePrefix() {
+    const script = document.querySelector('script[src*="main.min.js"], script[src*="main.js"]');
+    if (script) {
+      const src = script.getAttribute('src');
+      if (src) {
+        const idx = src.indexOf('js/main');
+        if (idx !== -1) {
+          return src.substring(0, idx);
+        }
+      }
+    }
+    return './'; // Default to root
+  }
+
+  function resolveAssetPath(url) {
+    if (!url || url.startsWith('http') || url.startsWith('data:')) return url;
+    if (url.startsWith('/')) url = url.substring(1);
+    if (url.startsWith('./')) url = url.substring(2);
+    return getRelativePrefix() + url;
+  }
+
+  function resolveAnchorPath(href) {
+    if (!href || href.startsWith('http') || !href.startsWith('#')) return href;
+    if (href === '#main-content' || href === '#footer') return href; // skip local skips
+    
+    const prefix = getRelativePrefix();
+    if (prefix === './') return href; // already on root
+    
+    const isFileProtocol = window.location.protocol === 'file:';
+    if (isFileProtocol) {
+      return prefix + 'index.html' + href;
+    } else {
+      return prefix + href;
+    }
+  }
+
+  function setupOfflineNavigation() {
+    if (window.location.protocol !== 'file:') return;
+    
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a');
+      if (!link) return;
+      
+      const href = link.getAttribute('href');
+      if (!href || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('#')) return;
+      
+      // If href is a directory relative path like "./about-us/"
+      if (href.endsWith('/')) {
+        e.preventDefault();
+        window.location.href = href + 'index.html';
+      }
+    });
+  }
+
+  // ============================================================
   // Asynchronous Content Hydration System
   // ============================================================
   async function loadAndHydrate() {
     try {
-      const response = await fetch('/content.json?v=' + Date.now());
+      const response = await fetch(resolveAssetPath('content.json') + '?v=' + Date.now());
       if (!response.ok) throw new Error('Failed to load content.json');
       const data = await response.json();
       
@@ -73,20 +133,20 @@
       // Hydrate Header Logo
       const headerLogoImg = document.querySelector('.header .logo__mark img');
       if (headerLogoImg && data.site.logoHeader) {
-        headerLogoImg.setAttribute('src', data.site.logoHeader);
+        headerLogoImg.setAttribute('src', resolveAssetPath(data.site.logoHeader));
         headerLogoImg.setAttribute('alt', (data.site.name || 'Astrix Glow') + ' Logo');
       } else if (headerLogoImg && data.site.logo) {
-        headerLogoImg.setAttribute('src', data.site.logo);
+        headerLogoImg.setAttribute('src', resolveAssetPath(data.site.logo));
         headerLogoImg.setAttribute('alt', (data.site.name || 'Astrix Glow') + ' Logo');
       }
       
       // Hydrate Footer Logo
       const footerLogoImg = document.querySelector('.footer .logo__mark img');
       if (footerLogoImg && data.site.logoFooter) {
-        footerLogoImg.setAttribute('src', data.site.logoFooter);
+        footerLogoImg.setAttribute('src', resolveAssetPath(data.site.logoFooter));
         footerLogoImg.setAttribute('alt', (data.site.name || 'Astrix Glow') + ' Logo');
       } else if (footerLogoImg && data.site.logo) {
-        footerLogoImg.setAttribute('src', data.site.logo);
+        footerLogoImg.setAttribute('src', resolveAssetPath(data.site.logo));
         footerLogoImg.setAttribute('alt', (data.site.name || 'Astrix Glow') + ' Logo');
       }
       
@@ -151,17 +211,17 @@
       const heroPrimary = document.getElementById('hero-cta-primary');
       if (heroPrimary && data.hero.ctaPrimary) {
         heroPrimary.textContent = data.hero.ctaPrimary.label;
-        heroPrimary.setAttribute('href', data.hero.ctaPrimary.href);
+        heroPrimary.setAttribute('href', resolveAnchorPath(data.hero.ctaPrimary.href));
       }
       const heroSecondary = document.getElementById('hero-cta-secondary');
       if (heroSecondary && data.hero.ctaSecondary) {
         heroSecondary.textContent = data.hero.ctaSecondary.label;
-        heroSecondary.setAttribute('href', data.hero.ctaSecondary.href);
+        heroSecondary.setAttribute('href', resolveAnchorPath(data.hero.ctaSecondary.href));
       }
       
       const heroImg = document.querySelector('.tilt-card img');
       if (heroImg && data.hero.image) {
-        heroImg.setAttribute('src', data.hero.image);
+        heroImg.setAttribute('src', resolveAssetPath(data.hero.image));
         if (data.hero.imageAlt) heroImg.setAttribute('alt', data.hero.imageAlt);
       }
     }
@@ -176,7 +236,7 @@
       
       const aboutImg = document.getElementById('about-img');
       if (aboutImg && data.about.image) {
-        aboutImg.setAttribute('src', data.about.image);
+        aboutImg.setAttribute('src', resolveAssetPath(data.about.image));
         if (data.about.imageAlt) aboutImg.setAttribute('alt', data.about.imageAlt);
       }
 
@@ -219,7 +279,7 @@
             if (titleEl) titleEl.textContent = solData.title;
             if (descEl) descEl.textContent = solData.description;
             if (imgEl && solData.image) {
-              imgEl.setAttribute('src', solData.image);
+              imgEl.setAttribute('src', resolveAssetPath(solData.image));
               imgEl.setAttribute('alt', solData.title);
             }
             
@@ -326,7 +386,7 @@
       const ctaBtn = document.getElementById('cta-btn');
       if (ctaBtn) {
         ctaBtn.textContent = data.cta.buttonLabel;
-        ctaBtn.setAttribute('href', data.cta.buttonHref);
+        ctaBtn.setAttribute('href', resolveAnchorPath(data.cta.buttonHref));
       }
     }
 
@@ -373,7 +433,7 @@
         brochureBtn.innerHTML = '';
         if (svg) brochureBtn.appendChild(svg);
         brochureBtn.appendChild(document.createTextNode(' ' + data.brochure.label));
-        brochureBtn.setAttribute('href', data.brochure.url);
+        brochureBtn.setAttribute('href', resolveAssetPath(data.brochure.url));
       }
     }
 
