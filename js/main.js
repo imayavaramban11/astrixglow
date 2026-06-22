@@ -45,7 +45,7 @@
   // ============================================================
   async function loadAndHydrate() {
     try {
-      const response = await fetch('content.json');
+      const response = await fetch('content.json?v=' + Date.now());
       if (!response.ok) throw new Error('Failed to load content.json');
       const data = await response.json();
       
