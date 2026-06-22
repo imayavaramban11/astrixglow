@@ -2,10 +2,10 @@
   "site": {
     "name": "Astrix Glow",
     "tagline": "Label Company",
-    "logo": "assets/images/astrixglowlogo.png",
-    "logoHeader": "assets/images/astrixglowlogo.png",
-    "logoFooter": "assets/images/astrixglowlogo.png",
-    "favicon": "assets/images/favicon.ico",
+    "logo": "/assets/images/astrixglowlogo.png",
+    "logoHeader": "/assets/images/astrixglowlogo.png",
+    "logoFooter": "/assets/images/astrixglowlogo.png",
+    "favicon": "/assets/images/favicon.ico",
     "url": "https://astrixglow.com",
     "email": "astrixglow@gmail.com",
     "emailSecondary": "astrixglow@gmail.com",
@@ -17,7 +17,7 @@
   "seo": {
     "title": "Astrix Glow | Label Company & Barcode Solutions Manufacturers",
     "description": "Global leader in premium barcode label manufacturing and product identification systems. Delivering high-accuracy labeling solutions for logistics, retail, and healthcare worldwide.",
-    "ogImage": "assets/images/og-image.png",
+    "ogImage": "/assets/images/og-image.png",
     "keywords": "barcode labels, barcode solutions, barcode manufacturer, thermal labels, inventory labels, logistics labeling, retail labels, asset management labels"
   },
   "navigation": [
@@ -104,7 +104,7 @@
       "label": "Learn More",
       "href": "#about"
     },
-    "image": "assets/images/hero-product.webp",
+    "image": "/assets/images/hero-product.webp",
     "imageAlt": "Astrix Glow High-Performance Label Printing System"
   },
   "trustedBy": {
@@ -139,7 +139,7 @@
         "text": "Efficient manufacturing workflows and dedicated customer support ensure quick turnaround times and reliable delivery schedules."
       }
     ],
-    "image": "assets/images/about-warehouse.webp",
+    "image": "/assets/images/about-warehouse.webp",
     "imageAlt": "Barcode labels applied to inventory in an automated warehouse center"
   },
   "products": {
@@ -151,37 +151,37 @@
         "title": "Direct Thermal Labels",
         "badges": ["Fast Printing", "Cost Effective", "Retail Ready"],
         "description": "Ideal for shipping, logistics, inventory control, and short-term barcode applications requiring reliable scan performance.",
-        "image": "assets/images/product-direct-thermal.png"
+        "image": "/assets/images/product-direct-thermal.png"
       },
       {
         "title": "Thermal Transfer Labels",
         "badges": ["Long Lasting", "Industrial Grade", "High Durability"],
         "description": "Designed for demanding environments requiring superior print permanence, durability, and resistance.",
-        "image": "assets/images/product-thermal-transfer.png"
+        "image": "/assets/images/product-thermal-transfer.png"
       },
       {
         "title": "Asset Tracking Labels",
         "badges": ["Asset Management", "Long Life", "High Adhesion"],
         "description": "Durable barcode labels designed for machinery, equipment, tools, and inventory asset identification.",
-        "image": "assets/images/product-asset-tracking.png"
+        "image": "/assets/images/product-asset-tracking.png"
       },
       {
         "title": "Security & Tamper Labels",
         "badges": ["Tamper Evident", "Secure", "Anti Counterfeit"],
         "description": "Specialized labels that reveal tampering attempts and provide enhanced product and asset security.",
-        "image": "assets/images/product-security-tamper.png"
+        "image": "/assets/images/product-security-tamper.png"
       },
       {
         "title": "Warehouse & Logistics Labels",
         "badges": ["Supply Chain", "Bulk Production", "Fast Scanning"],
         "description": "Barcode labels optimized for warehousing, shipping, receiving, and inventory management operations.",
-        "image": "assets/images/product-warehouse-logistics.png"
+        "image": "/assets/images/product-warehouse-logistics.png"
       },
       {
         "title": "Custom Printed Labels",
         "badges": ["Custom Design", "QR Compatible", "Variable Data"],
         "description": "Fully customized barcode and QR code labels tailored to branding, packaging, and operational requirements.",
-        "image": "assets/images/product-custom-printed.png"
+        "image": "/assets/images/product-custom-printed.png"
       }
     ]
   },
@@ -199,7 +199,7 @@
       {
         "title": "Retail & FMCG Solutions",
         "description": "Enhance product identification, inventory visibility, shelf management, and checkout efficiency with premium barcode labeling solutions.",
-        "image": "assets/images/solution-retail.png",
+        "image": "/assets/images/solution-retail.png",
         "icon": "shopping-bag",
         "href": "#",
         "highlights": [
@@ -211,7 +211,7 @@
       {
         "title": "Warehouse & Logistics Solutions",
         "description": "Improve inventory tracking, shipping accuracy, warehouse operations, and supply chain visibility through durable logistics barcode labels.",
-        "image": "assets/images/solution-logistics.png",
+        "image": "/assets/images/solution-logistics.png",
         "icon": "truck",
         "href": "#",
         "highlights": [
@@ -223,7 +223,7 @@
       {
         "title": "Manufacturing & Asset Tracking",
         "description": "Track raw materials, production inventory, equipment, and finished goods using industrial-grade barcode labels designed for demanding environments.",
-        "image": "assets/images/solution-asset.webp",
+        "image": "/assets/images/solution-asset.webp",
         "icon": "box",
         "href": "#",
         "highlights": [
@@ -235,7 +235,7 @@
       {
         "title": "Healthcare & Pharmaceutical Solutions",
         "description": "Ensure accurate identification of medicines, laboratory samples, medical equipment, and patient records with high-precision barcode labels.",
-        "image": "assets/images/solution-healthcare.png",
+        "image": "/assets/images/solution-healthcare.png",
         "icon": "heart",
         "href": "#",
         "highlights": [
@@ -279,7 +279,7 @@
       "metricLabel": "Barcode Readability Rate",
       "description": "Delivered 42 high-volume label stations across 5 regional distribution centers, replacing manual handheld counts with printed barcode pallet and carton labels.",
       "tags": ["Logistics", "Barcode Labeling"],
-      "image": "assets/images/solution-logistics.webp"
+      "image": "/assets/images/solution-logistics.webp"
     },
     {
       "title": "Retail Chain Inventory Control",
@@ -288,7 +288,7 @@
       "metricLabel": "Shrinkage Reduction",
       "description": "Rolled out tamper-resistant barcode label programs and self-checkout shelf labels across 120 apparel stores to secure merchandise and improve stock visibility.",
       "tags": ["Retail", "Shelf Labels"],
-      "image": "assets/images/solution-retail.webp"
+      "image": "/assets/images/solution-retail.webp"
     },
     {
       "title": "Sterilization Autoclave Tracking",
@@ -297,7 +297,7 @@
       "metricLabel": "Efficiency Increase",
       "description": "Created durable asset labels and sterilization cycle labels to track sterilization trays and medical equipment lifecycle conditions.",
       "tags": ["Healthcare", "Durable Labels"],
-      "image": "assets/images/solution-asset.webp"
+      "image": "/assets/images/solution-asset.webp"
     }
   ],
   "testimonials": [

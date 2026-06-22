@@ -13,7 +13,16 @@
 
   // DOM Ready
   document.addEventListener('DOMContentLoaded', () => {
-    window.scrollTo({ top: 0, left: 0 });
+    // Only scroll to top if we're not landing on a subpage that requires scrolling to a section
+    const path = window.location.pathname;
+    const isSubpage = path.includes('/about-us') || 
+                      path.includes('/solutions/') || 
+                      path.includes('/barcode-label-') || 
+                      path.includes('/contacts') || 
+                      path.includes('/careers');
+    if (!isSubpage) {
+      window.scrollTo({ top: 0, left: 0 });
+    }
     init();
   });
 
@@ -22,6 +31,8 @@
     loadAndHydrate().then(() => {
       // 2. Initialize metric counters after content is hydrated
       initCounterAnimation();
+      // 3. Handle subpage auto-scroll to the targeted section
+      handleSubpageScroll();
     });
 
     // 3. Initialize all interactive UI features
@@ -45,7 +56,7 @@
   // ============================================================
   async function loadAndHydrate() {
     try {
-      const response = await fetch('content.json?v=' + Date.now());
+      const response = await fetch('/content.json?v=' + Date.now());
       if (!response.ok) throw new Error('Failed to load content.json');
       const data = await response.json();
       
@@ -387,6 +398,43 @@
           <span class="footer__cert-badge">${escapeHtml(c)}</span>
         `).join('');
       }
+    }
+  }
+
+  // ============================================================
+  // Page Specific Auto-Scroll for Subpage URLs
+  // ============================================================
+  function handleSubpageScroll() {
+    const path = window.location.pathname;
+    let targetId = '';
+    if (path.includes('/about-us')) {
+      targetId = '#about';
+    } else if (path.includes('/solutions/barcode-retail-labels')) {
+      targetId = '#solutions';
+    } else if (path.includes('/solutions/asset-label-tracking-system')) {
+      targetId = '#solutions';
+    } else if (path.includes('/solutions/warehouse-label-logistics-management-system')) {
+      targetId = '#solutions';
+    } else if (path.includes('/barcode-label-application-engineering') ||
+               path.includes('/barcode-label-product-testing') ||
+               path.includes('/barcode-label-implementation-consulting')) {
+      targetId = '#services';
+    } else if (path.includes('/contacts')) {
+      targetId = '#contact';
+    } else if (path.includes('/careers')) {
+      targetId = '#contact';
+    }
+
+    if (targetId) {
+      setTimeout(() => {
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          const header = document.getElementById('header');
+          const headerHeight = header ? header.offsetHeight : 80;
+          const targetPos = targetEl.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
+          window.scrollTo({ top: targetPos, behavior: 'smooth' });
+        }
+      }, 500);
     }
   }
 

@@ -8,6 +8,3 @@ Disallow: /private/
 
 # Sitemap
 Sitemap: https://astrixglow.com/sitemap.xml
-
-# Crawl-delay (optional, not supported by all bots)
-Crawl-delay: 1
