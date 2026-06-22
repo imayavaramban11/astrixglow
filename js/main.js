@@ -486,15 +486,18 @@
     }
 
     if (targetId) {
-      setTimeout(() => {
-        const targetEl = document.querySelector(targetId);
-        if (targetEl) {
-          const header = document.getElementById('header');
-          const headerHeight = header ? header.offsetHeight : 80;
-          const targetPos = targetEl.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
-          window.scrollTo({ top: targetPos, behavior: 'smooth' });
-        }
-      }, 500);
+      // Use requestAnimationFrame to ensure layout is calculated, and jump instantly instead of smooth scrolling
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          const targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            const header = document.getElementById('header');
+            const headerHeight = header ? header.offsetHeight : 80;
+            const targetPos = targetEl.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
+            window.scrollTo({ top: targetPos, behavior: 'auto' });
+          }
+        }, 50);
+      });
     }
   }
 
